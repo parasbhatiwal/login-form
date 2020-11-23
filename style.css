@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    margin: 100px auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 15px 5px darkgray;
+    border-radius: 15px;
+    width: 70%;
+    height: 500px;
+}
+
+.left-form{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-form h2{
+    color: rgb(179, 19, 179);
+    font-family: arial;
+    font-size: 30px;
+}
+
+.left-form input{
+    width: 70%;
+    margin: 20px auto;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 20px grey;
+    padding: 12px 15px;
+}
+
+#checkbox input{
+    width: fit-content;
+}
+
+.left-form button{
+    padding: 12px 15px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom left, rgb(158, 14, 158), rgb(240, 27, 240));
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 0 0 10px 3px grey;
+    border: none;
+    transition: all 0.3s;
+
+}
+
+
+.left-form button:hover{
+    transform: translateY(2px);
+    box-shadow: 0 0 4px 1px grey;
+}
+
+.right-form{
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, rgb(158, 14, 158), rgb(240, 27, 240));
+    border-radius: 15px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column
+
+}
+
+.right-form h1{
+         color: white;
+         font-family: monospace;
+         margin: 20px auto;
+}
+
+.right-form p{
+    width: 77%;
+    margin: 10px auto;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.right-form button{
+    padding: 12px 15px;
+    border-radius: 15px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    box-shadow: 0 0 10px rgb(114, 112, 112);
+    border: 2px solid white;
+    background: transparent;
+    margin: 30px auto;
+    transition: all 0.3s;
+
+}
+
+.right-form button:hover{
+    background-color: rgb(238, 25, 238);
+    transform: translateY(2px);
+}
+
+
+@media only screen and (max-width: 900px) {
+    .left-form h2{
+        color: rgb(179, 19, 179);
+        font-family: arial;
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+.container{
+    flex-direction: column;
+    height: min-content;
+}
+
+.left-form {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.right-form {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, rgb(158, 14, 158), rgb(240, 27, 240));
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+
+}
+
+  }
